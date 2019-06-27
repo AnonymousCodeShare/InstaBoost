@@ -1,6 +1,6 @@
 # InstaBoost
 
-This repository is implementation of InstaBoost: Boosting Instance Segmentation Via Probability Map Guided Copy-Pasting on [mmdetecion](https://github.com/open-mmlab/mmdetection) and [detectron](https://github.com/roytseng-tw/Detectron.pytorch). InstaBoost will be adopted as the dataloader by default. 
+This repository is the implementation of InstaBoost: Boosting Instance Segmentation Via Probability Map Guided Copy-Pasting on [mmdetecion](https://github.com/open-mmlab/mmdetection) and [detectron](https://github.com/roytseng-tw/Detectron.pytorch). 
 
 ## MMdetection Framework Quick Start
 
@@ -30,7 +30,8 @@ sh matting_init.sh
 
 5. Move the matting module, named like opencv_mat.cpython-35m-x86_64-linux-gnu.so, to where mmdetection package is installed. For example, I use conda to create an environment called 'mmtest', then I should move the module to 'PATH_TO_CONDA/anaconda3/envs/mmtest/lib/python3.5/site-packages/mmdet-0.6.0+53c647e-py3.5.egg/mmdet/datasets/AugSeg/global_matting'.
 
-6. Train or test models according to [mmdetection/README.md](mmdetection/README.md). 
+6. Train or test models according to [mmdetection/README.md](mmdetection/README.md).  InstaBoost will be adopted as the dataloader by default. 
+
 
 ## Detectron Framework Quick Start
 
@@ -52,7 +53,7 @@ cd detectron/lib
 sh matting_init.sh
 ```
 
-4. Prepare and run detectron according to [detectron/README.md](detectron/README.md). 
+4. Prepare and run detectron according to [detectron/README.md](detectron/README.md). InstaBoost will be adopted as the dataloader by default. 
 
 
 ## Configurations
